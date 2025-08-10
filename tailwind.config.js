@@ -4,9 +4,13 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    "lg:after:bg-[url('/img/line.png')]",
+    "lg:after:bg-[url('/img/line-bottom.png')]",
+  ],
   theme: {
     extend: {
-      colors:{
+      colors: {
         "color-primary": "#01051e",
         "color-primary-light": "#020726",
         "color-primary-dark": "#010417",
@@ -19,8 +23,8 @@ module.exports = {
     container: {
       center: true,
       padding: {
-      DEFAULT:"20px",
-      md:"50px"
+        DEFAULT: "20px",
+        md: "50px"
       }
     }
   },

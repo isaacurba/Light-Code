@@ -1,5 +1,5 @@
 import React from 'react'
-import hero3 from "../assets/img/hero3.png"
+import hero3 from "/public/img/hero3.png"
 
 const pricing = () => {
   return (
