@@ -44,7 +44,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="bg-color-primary-dark h-[100vh] w-full absolute top-0 left-0 z-40 ">
+          <div className="bg-color-primary-dark h-[100vh] w-full absolute top-0 left-0 z-40 over">
             <ul className="h-full grid place-items-center py-20 space-y-4">
               <li><a onClick={closeMenu} href="#home" className="text-color-white hover:text-color-secondary ease-in duration-200">Home</a></li>
               <li><a onClick={closeMenu} href="#features" className="text-color-white hover:text-color-secondary ease-in duration-200">Testimonial</a></li>

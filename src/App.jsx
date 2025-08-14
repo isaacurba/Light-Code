@@ -1,8 +1,12 @@
 import Header from './components/Header.jsx';
 import Home from './components/Home.jsx';
 import Features from './components/Features.jsx';
-import Pricing from './components/Pricing.jsx';
+import PricingMoney from './components/PricingMoney.jsx';
 import HowWorks from './components/HowWorks.jsx';
+import Testimonial from './components/Testimonial.jsx';
+import Pricing from './components/Pricing.jsx';
+
+
 
 
 
@@ -14,8 +18,11 @@ function App() {
       <Header />
       <Home />
       <Features />
-      <Pricing />
+      <PricingMoney />
       <HowWorks />
+      <Testimonial />
+      <Pricing />
+
     </div>
 
   );
