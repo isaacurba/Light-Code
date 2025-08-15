@@ -7,12 +7,8 @@ import Testimonial from './components/Testimonial.jsx';
 import Pricing from './components/Pricing.jsx';
 import Blog from './components/Blog.jsx';
 import Download from './components/Download.jsx';
-
-
-
-
-
-
+import Contact from './components/Contact.jsx';
+import Footer from './components/Footer.jsx';
 
 
 
@@ -28,6 +24,8 @@ function App() {
       <Pricing />
       <Blog />
       <Download />
+      <Contact />
+      <Footer />
 
     </div>
 
