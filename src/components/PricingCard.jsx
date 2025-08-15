@@ -1,15 +1,12 @@
 const PricingCard = ({ priceOpen, title, price, period, description, features }) => {
   return (
     <div
-      className={`card relative h-auto w-auto transition-transform duration-500 preserve-3d ${
-        priceOpen ? 'rotate-y-180' : ''
-      }`}
-    >
+      className={`card relative h-auto w-auto transition-transform duration-500 preserve-3d ${priceOpen ? 'rotate-y-180' : ''}`}>
       {/* Front Card */}
       <div className="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full backface-hidden">
         <div className="relative">
           <div className="text-6xl pl-2 before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
-            {price}{' '}
+            {price}
             <span className="text-sm font-normal tracking-widest">
               {period}
             </span>

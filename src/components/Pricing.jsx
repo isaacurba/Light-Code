@@ -13,11 +13,23 @@ const Pricing = () => {
       period: "/per month",
       description: "For beginners who want to scale business globally",
       features: [
-        { label: "Expense Management", active: true },
-        { label: "Card Management", active: true },
-        { label: "Instant Statistics", active: false },
-        { label: "Bookmark Functions", active: false },
-        { label: "Accounting System", active: false },
+        { 
+          label: "Expense Management", 
+          active: true 
+        },
+        { 
+          label: "Card Management", 
+          active: true 
+        },
+        { label: "Instant Statistics", 
+          active: false 
+        },
+        { label: "Bookmark Functions", 
+          active: false 
+        },
+        { label: "Accounting System", 
+          active: false 
+        },
       ]
     },
     {
@@ -26,11 +38,25 @@ const Pricing = () => {
       period: "/per month",
       description: "For professionals needing advanced features",
       features: [
-        { label: "Expense Management", active: true },
-        { label: "Card Management", active: true },
-        { label: "Instant Statistics", active: true },
-        { label: "Bookmark Functions", active: true },
-        { label: "Accounting System", active: false },
+        { 
+          label: "Expense Management", 
+          active: true 
+        },
+        { 
+          label: "Card Management", 
+          active: true 
+        },
+        { 
+          label: "Instant Statistics", 
+          active: true 
+        },
+        { label: "Bookmark Functions", 
+          active: true 
+        },
+        { 
+          label: "Accounting System", 
+          active: false 
+        },
       ]
     },
     {
@@ -39,13 +65,30 @@ const Pricing = () => {
       period: "/per month",
       description: "For enterprises with large-scale needs",
       features: [
-        { label: "Expense Management", active: true },
-        { label: "Card Management", active: true },
-        { label: "Instant Statistics", active: true },
-        { label: "Bookmark Functions", active: true },
-        { label: "Accounting System", active: true },
+        { 
+          label: "Expense Management", 
+          active: true 
+        },
+        { 
+          label: "Card Management", 
+          active: true 
+        },
+        { 
+          label: "Instant Statistics", 
+          active: true 
+        },
+        { 
+          label: "Bookmark Functions", 
+          active: true 
+        },
+        { 
+          label: "Accounting System", 
+          active: true 
+        },
       ]
+
     }
+
   ];
 
   return (
@@ -55,7 +98,7 @@ const Pricing = () => {
         <h1 className="title">Get in reasonable price</h1>
       </div>
 
-      {/* Toggle */}
+      {/* Toggle/Switch */}
       <div className={`mt-5 flex items-center justify-center gap-4`}>
         <p>Bill Monthly</p>
         <label className={`cursor-pointer relative inline-block w-20 h-8 rounded-full ${priceOpen ? 'bg-color-secondary' : 'bg-color-primary-dark'}`}>
@@ -66,11 +109,14 @@ const Pricing = () => {
       </div>
 
       {/* Cards */}
-      <section className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-10">
+      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {plans.map((plan, index) => (
-          <PricingCard key={index} priceOpen={priceOpen} {...plan} />
+          <PricingCard 
+          key={index} 
+          priceOpen={priceOpen} 
+          {...plan} />
         ))}
-      </section>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,10 @@ import PricingMoney from './components/PricingMoney.jsx';
 import HowWorks from './components/HowWorks.jsx';
 import Testimonial from './components/Testimonial.jsx';
 import Pricing from './components/Pricing.jsx';
+import Blog from './components/Blog.jsx';
+import Download from './components/Download.jsx';
+
+
 
 
 
@@ -22,6 +26,8 @@ function App() {
       <HowWorks />
       <Testimonial />
       <Pricing />
+      <Blog />
+      <Download />
 
     </div>
 
